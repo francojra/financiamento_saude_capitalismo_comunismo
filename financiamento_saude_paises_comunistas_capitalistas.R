@@ -72,3 +72,20 @@ fin_saude1 <- fin_saude %>%
             sd = sd(gasto_saude), n = n(),
             se = sd/sqrt(n)) %>%
   view()
+
+fin_saude2 <- fin_saude %>%
+  filter(Entity %in% c("United States", "Germany", "Japan",
+                       "China", "Cuba", "North Korea")) %>%
+  view() 
+
+fin_saude3 <- fin_saude %>%
+  filter(Entity %in% c("United States", "China", "Brazil")) %>%
+  view() 
+
+
+
+
+
+
+
+
