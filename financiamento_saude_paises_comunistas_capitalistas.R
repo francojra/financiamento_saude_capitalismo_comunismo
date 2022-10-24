@@ -58,4 +58,17 @@ names(fin_saude)
 
 # Manipular dados --------------------------------------------------------------------------------------------------------------------------
 
+fin_saude <- fin_saude %>%
+  select(-Code) %>%
+  rename(gasto_saude = public_health_expenditure_pc_gdp) %>%
+  filter(between(Year, 2000, 2019)) %>%
+  view()
 
+fin_saude1 <- fin_saude %>%
+  filter(Entity %in% c("United States", "Germany", "Japan",
+                       "China", "Cuba", "North Korea")) %>%
+  group_by(Entity) %>%
+  summarise(media = mean(gasto_saude),
+            sd = sd(gasto_saude), n = n(),
+            se = sd/sqrt(n)) %>%
+  view()
