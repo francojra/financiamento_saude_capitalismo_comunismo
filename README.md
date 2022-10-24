@@ -1,0 +1,1 @@
+# fincanciamento_saude_capitalismo_comunismo
