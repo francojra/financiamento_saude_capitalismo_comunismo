@@ -115,16 +115,19 @@ ggplot(fin_saude2, aes(x = Year, y = gasto_saude,
   theme_ipsum(axis_text_size = 14, axis_title_size = 16) +
   theme(axis.text = element_text(color = "black"))
 
+c4a("Dark2", 3)
+
 ggplot(fin_saude3, aes(x = Year, y = gasto_saude,
                        group = Entity, color = Entity)) +
   geom_line(size = 2.2) +
-  scale_color_manual(values = c("#88CCEE", "#CC6677",
-                               "#DDCC77", "#117733",
-                               "#332288", "#AA4499")) +
+  scale_color_manual(values = c("#1B9E77", "#D95F02", "#7570B3"),
+                     labels = c("Brasil", "China", "Estados Unidos")) +
   labs(x = "Tempo (anos)", 
        y = "Taxa de financiamento em\n saúde pelo governo (%)",
        color = "Países") +
   theme_hc() +
-  theme(axis.text = element_text(color = "black"))
+  theme(axis.title = element_text(size = 18),
+        axis.text = element_text(color = "black", size = 15),
+        legend.text = element_text(size = 12))
 
 
