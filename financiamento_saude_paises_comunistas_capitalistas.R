@@ -95,13 +95,36 @@ ggplot(fin_saude1, aes(x = fct_reorder(Entity, media),
                                "#DDCC77", "#117733",
                                "#332288", "#AA4499")) +
   scale_y_continuous(expand = expansion(mult = c(0,0))) +
-  labs(x = "Países", y = "Taxa de financiamento em saúde\n pelo governo (%)") +
+  scale_x_discrete(labels = c("China", "Japão", "Alemanha", "Estados Unidos")) +
+  labs(x = "Países", y = "Taxa de financiamento em\n saúde pelo governo (%)") +
   theme_ipsum(axis_text_size = 14, axis_title_size = 16) +
   theme(legend.position = "none", axis.text = element_text(color = "black"))
 
+ggplot(fin_saude2, aes(x = Year, y = gasto_saude,
+                       group = Entity, color = Entity)) +
+  geom_point(shape = 15, size = 2.5) +
+  geom_line(size = 1.2) +
+  scale_color_manual(values = c("#88CCEE", "#CC6677",
+                               "#DDCC77", "#117733",
+                               "#332288", "#AA4499"),
+                     labels = c("China", "Alemanha", 
+                                "Japão", "Estados Unidos")) +
+  labs(x = "Tempo (anos)", 
+       y = "Taxa de financiamento em\n saúde pelo governo (%)",
+       color = "Países") +
+  theme_ipsum(axis_text_size = 14, axis_title_size = 16) +
+  theme(axis.text = element_text(color = "black"))
 
-
-
-
+ggplot(fin_saude3, aes(x = Year, y = gasto_saude,
+                       group = Entity, color = Entity)) +
+  geom_line(size = 2.2) +
+  scale_color_manual(values = c("#88CCEE", "#CC6677",
+                               "#DDCC77", "#117733",
+                               "#332288", "#AA4499")) +
+  labs(x = "Tempo (anos)", 
+       y = "Taxa de financiamento em\n saúde pelo governo (%)",
+       color = "Países") +
+  theme_hc() +
+  theme(axis.text = element_text(color = "black"))
 
 
