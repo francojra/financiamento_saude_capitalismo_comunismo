@@ -43,5 +43,19 @@
 ### empiricamente observada entre os resultados da saúde e as despesas de saúde é indicativa de grandes 
 ### retornos para os investimentos na própria saúde.
 
+# Carregar pacotes -------------------------------------------------------------------------------------------------------------------------
+
+library(tidyverse)
+library(cols4all)
+library(hrbrthemes)
+library(ggthemes)
+
+# Carregar dados ---------------------------------------------------------------------------------------------------------------------------
+
+fin_saude <- read.csv("public-health-expenditure-share-GDP-OWID.csv")
+view(fin_saude)
+names(fin_saude)
+
+# Manipular dados --------------------------------------------------------------------------------------------------------------------------
 
 
