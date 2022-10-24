@@ -32,6 +32,16 @@
 ### público em saúde - embora tenham vindo a recuperar seu atraso - e o papel das despesas é muito
 ### mais alto (cerca de 50% dos gastos totais).
 
+### Fincancimento em saúde nos países em desenvolvimento no século 21 tem sido grandemente moldado
+### pelo fluxo de recursos canalizados através da ajuda ao desenvolvimento. Esses fluxos que aumentaram
+### após a introdução dos Objetivos para o Desenvolvimento do Milênio, contam com cerca de 0,7%
+### dos gastos dos recursos pelos países de renda alta sobre serviços em saúde. Apesar de parecer uma
+### pequena proporção pelos comitês nacionais dos países ricos, para os países de baixa renda essa
+### porcentagem é de ajuda substancial. Na África Sub-saariana eles financiaram mais que 25% dos gastos
+### totais sobre saúde. Isso implica que desenvolver assistências para saúde, se devidamente orientada e gerida, 
+### tem o potencial de reduzir drasticamente a desigualdade nos resultados sanitários: a robusta relação 
+### empiricamente observada entre os resultados da saúde e as despesas de saúde é indicativa de grandes 
+### retornos para os investimentos na própria saúde.
 
 
 
