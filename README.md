@@ -1,4 +1,4 @@
-# Financiamento em serviços de saúde em países capitalistas e comunistas
+# Financiamento em serviços de saúde em países democratas e autocratas
 
 ### Autoria do script: Jeanne Franco
 ### Data: 23/10/22
