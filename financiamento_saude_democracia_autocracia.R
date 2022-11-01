@@ -118,7 +118,7 @@ ggplot(fin_saude2, aes(x = Year, y = gasto_saude,
 ggplot(fin_saude3, aes(x = Year, y = gasto_saude,
                        group = Entity, color = Entity)) +
   geom_line(size = 2) +
-  scale_color_manual(values = c("#1B9E77", "#D95F02", "#7570B3"),
+  scale_color_manual(values = c('#1B9E77', '#999999','#E69F00'),
                      labels = c("Brasil", "China", "Estados Unidos")) +
   labs(x = "Tempo (anos)", 
        y = "Taxa de financiamento em\n saúde pelo governo (%)",
